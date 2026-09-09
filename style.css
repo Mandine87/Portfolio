@@ -13,51 +13,60 @@ h3{
 
 #container {
 	width: 100%;
-	margin: 0 auto;
+	height: 100%;
+	margin-left: 0px;
 }
 
 header {
-	background: #D6B8C0;
 	width:100%;
-	height: 90px;
+	height: 100%;
 }
 
 header a {
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-	line-height: 85px;
 }
 
-#menu {
-		width:1024px;
+#menu { 
+		position: fixed;
+		width:200px;
 		margin:0 auto;
-		height:100%;
+		height:1080px;
+		background: #D6B8C0;
+		line-height: 85px;
 }
 
-#menu-right {
-	float: right;
+#me {
+	align-items: center;
+	text-align: center;
+	background: #405738; 
+	color: white;
+	height: 300px;
 }
-.link-right {
-	margin-left: 20px;
-}
+
 
 #img-moi {
 	border-radius: 75px;
-	width: 200px;
-	height:200px;
-	margin-top: 20px;
+	width: 150px;
+	height:150px;
+	margin-top: 10px;
 }
 
 #top {
 	width: 100%;
-	height: 400px;
-	background: #405738;
-	color: white;
+	height: 100%;
 }
 
 #top-container {
 	width: 1024px;
 	margin: 0 auto;
 	text-align: center;
+}
+
+#main-container {
+	background: #CCAFD6;
+	width: 100% - 200px;
+	margin-left: 200px;
+	height:1080px;
 }
