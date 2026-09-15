@@ -1,11 +1,14 @@
 h1 {
+	text-align: center;
 	font-size:48px;
 	line-height: 80px;
+	text-decoration: underline;
 }
 
 h2 {
 	font-size:36px;
 	line-height: 50px;
+	text-decoration: underline;
 }
 
 h3{
@@ -24,8 +27,8 @@ h4{
 }
 
 a {
-	color: black;
-	text-decoration: none;
+	color: white;
+	text-decoration: underline;
 	text-transform: uppercase;
 }
 
@@ -77,6 +80,7 @@ a {
 }
 
 #about-me {
+	padding: 20px;
 	background: #D6B8C0;
 	height:350px;
 	color: black;
@@ -84,6 +88,7 @@ a {
 }
 
 #skills {
+	padding: 20px;
 	background: #572C38; 
 	height:350px;
 	color: white;
@@ -98,4 +103,31 @@ a {
 .projet {
 	border raidus: 12px;
 	width: 350 px; 
+	align-items: center;
+}
+
+.projet-contenu {
+	padding: 20px;
+}
+
+.project-title-picture {
+	display: flex;
+	flex-direction: column; 
+  	justify-content: center; /* Centre horizontalement */
+	align-items: center;
+}
+
+.project-infos-contener {
+	  display: flex; /* Active le mode flexible */
+}
+
+.i-was-charged-to {
+	display: inline-block;
+	flex: 1;       /* Les blocs prennent la même largeur */
+
+}
+
+.what-i-learned {
+	display: block;	
+  	flex: 1;       /* Les blocs prennent la même largeur */
 }
