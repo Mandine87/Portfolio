@@ -16,7 +16,7 @@ h3{
 	line-height: 40px;
 }
 h4{
-	font-size:22px;
+	font-size:20px;
 	line-height: 30px;
 }
 
@@ -47,7 +47,7 @@ a {
 	background: #405738; 
 	color: white;
 	height: 300px;
-	line-height: 40px;
+	line-height: 25px;
 }
 
 
@@ -87,17 +87,34 @@ a {
 	line-height: 30px;
 }
 
-#skills {
+#skills-contener {
 	padding: 20px;
 	background: #572C38; 
 	height:350px;
 	color: white;
 	line-height: 30px;
+	display: flex;
+  gap: 400px;
+}
+
+#skills {
+	display: inline-block;
+}
+
+#softwares {
+	display: block;
+}
+
+#languages {
+	display: block;
 }
 
 #projects {
-	height:200%;
 	background: #C0D6B8;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
 }
 
 .projet {
@@ -113,26 +130,31 @@ a {
 .project-title-picture {
 	display: flex;
 	flex-direction: column; 
-  	justify-content: center; /* Centre horizontalement */
+  justify-content: center;
 	align-items: center;
 }
 
 .project-infos-contener {
-	  display: flex; /* Active le mode flexible */
+	  display: flex;
 }
 
 .i-was-charged-to {
 	display: inline-block;
-	flex: 1;       /* Les blocs prennent la même largeur */
+	flex: 1;
 
 }
 
 .what-i-learned {
 	display: block;	
-  	flex: 1;       /* Les blocs prennent la même largeur */
+  	flex: 1;
 }
 
-.video-container {
+.project-title-picture img {
+  width: 300px;  /* Définissez la largeur voulue */
+  height: 200px; /* Définissez la hauteur voulue */
+  object-fit: cover; /* Remplit le cadre en gardant les proportions (recadre si nécessaire) */
+}
+/*.video-container {
   width: 100%;
   max-width: 800px;
   height:100%;
@@ -146,4 +168,4 @@ a {
   width: 100%;
   height: auto;
   display: block;
-}
+}*/
