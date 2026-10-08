@@ -1,19 +1,19 @@
 h1 {
 	text-align: center;
 	font-size:48px;
-	line-height: 80px;
-	text-decoration: underline;
+	line-height: 200px;
+	text-decoration: none;
 }
 
 h2 {
 	font-size:36px;
-	line-height: 50px;
-	text-decoration: underline;
+	line-height: 80px;
+	text-decoration: none;
 }
 
 h3{
 	font-size:28px;
-	line-height: 40px;
+	line-height: 60px;
 }
 h4{
 	font-size:20px;
@@ -26,25 +26,37 @@ h4{
 	margin-left: 0px;
 }
 
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
 a {
 	color: white;
 	text-decoration: underline;
 	text-transform: uppercase;
+}
+a:hover {
+	font-weight: bold;  
+	position: relative;
+  left: 15px;
 }
 
 #menu { 
 		position: fixed;
 		width:250px;
 		margin:0 auto;
-		height:1080px;
-		background: #D6B8C0;
+		height:100%;
+		background: #A38E6C;
 		line-height: 85px;
 		align-items: center;
 		text-align: center;
 }
 
 #me {
-	background: #405738; 
 	color: white;
 	height: 300px;
 	line-height: 25px;
@@ -59,40 +71,50 @@ a {
 }
 
 #summary {
-	background: #CCAFD6;
+	background: #F0DAB7;
 	height:400px;
 	color: black;
 }
 
+#summary a {
+	color: black;
+	text-decoration: none;
+}
+
 #contact {
-	background: #572C38;
 	height:100%;
 	color: white;
 	line-height: 40px;
 	text-align: margin-left;
+	font-size: 13px;
 }
 
 #main-container {
-	background: #D6B8C0;
+	background: linear-gradient(#B6D4F0, #5B81A3);
 	width: 100% - 250px;
 	margin-left: 250px;
-	height:1080px;
+	height:100%;
 }
 
 #about-me {
 	padding: 20px;
-	background: #D6B8C0;
-	height:350px;
+	height:900px;
 	color: black;
-	line-height: 30px;
+	line-height: 50px;
+	font-size: 20px;
 }
+
+#about-me a {
+	color: black;
+	text-decoration: none;
+}
+
 
 #skills-contener {
 	padding: 20px;
-	background: #572C38; 
-	height:350px;
-	color: white;
-	line-height: 30px;
+	height:600px;
+	color: black;
+	line-height: 50px;
 	display: flex;
   gap: 400px;
 }
@@ -103,28 +125,33 @@ a {
 
 #softwares {
 	display: block;
+	text-align: left;
 }
 
 #languages {
 	display: block;
+	text-align: left;
 }
 
 #projects {
-	background: #C0D6B8;
 	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	grid-gap: 10px;
+	grid-gap: 50px;
 }
 
 .projet {
 	border raidus: 12px;
 	width: 350 px; 
 	align-items: center;
+	line height: 500px;
 }
 
 .projet-contenu {
 	padding: 20px;
+
+	line-height: 30px;
+
 }
 
 .project-title-picture {
