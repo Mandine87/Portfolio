@@ -177,8 +177,8 @@ a:hover {
 }
 
 .project-title-picture img {
-  width: 300px;  /* Définissez la largeur voulue */
-  height: 200px; /* Définissez la hauteur voulue */
+  width: 384px;  /* Définissez la largeur voulue */
+  height: 216px; /* Définissez la hauteur voulue */
   object-fit: cover; /* Remplit le cadre en gardant les proportions (recadre si nécessaire) */
 }
 /*.video-container {
